@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gagan L K | Cloud & Backend Engineer</title>
+    <meta name="description"
+        content="Portfolio of Gagan L K — CSE student at DSCE skilled in Python, FastAPI, PostgreSQL, Redis, Kafka, Docker, and GCP. Building cloud-integrated backend systems.">
+    <meta name="keywords"
+        content="Gagan LK, Cloud Backend, FastAPI, PostgreSQL, Redis, Kafka, GCP, Docker, Python, Portfolio, DSCE">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- ── NAVBAR ─────────────────────────────────────────── -->
+    <header class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo" id="nav-logo">
+                <span class="logo-bracket">&lt;</span>
+                <span class="logo-text">GLK</span>
+                <span class="logo-bracket">/&gt;</span>
+            </a>
+            <nav class="nav-menu" id="nav-menu">
+                <a href="#about" class="nav-link" id="link-about">About</a>
+                <a href="#skills" class="nav-link" id="link-skills">Skills</a>
+                <a href="#projects" class="nav-link" id="link-projects">Projects</a>
+                <a href="#education" class="nav-link" id="link-education">Education</a>
+                <a href="#terminal" class="nav-link" id="link-terminal">Console</a>
+                <a href="#contact" class="nav-link btn-contact" id="link-contact">Contact</a>
+            </nav>
+            <div class="nav-actions">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle Theme">
+                    <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="5" />
+                        <line x1="12" y1="1" x2="12" y2="3" />
+                        <line x1="12" y1="21" x2="12" y2="23" />
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+                        <line x1="1" y1="12" x2="3" y2="12" />
+                        <line x1="21" y1="12" x2="23" y2="12" />
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+                    </svg>
+                    <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+                    </svg>
+                </button>
+                <button class="mobile-toggle" id="mobile-toggle" aria-label="Open Menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+        <div class="scroll-progress" id="scroll-progress"></div>
+    </header>
+
+    <main>
+        <!-- ── HERO ───────────────────────────────────────── -->
+        <section class="hero" id="home">
+            <div class="hero-bg-grid"></div>
+            <div class="hero-container">
+                <div class="hero-content scroll-reveal">
+                    <div class="hero-badge">
+                        <span class="badge-dot"></span>
+                        B.E. CSE Student · DSCE · 2023–2027
+                    </div>
+                    <h1 class="hero-title">
+                        Hi, I'm <span class="gradient-text">Gagan L K</span>
+                    </h1>
+                    <p class="hero-role">Cloud &amp; Backend Engineer</p>
+                    <p class="hero-desc">
+                        Computer Science Engineering student with hands-on experience in
+                        cloud-integrated backend systems, infrastructure monitoring, and
+                        real-time application development. Skilled in Python, FastAPI,
+                        PostgreSQL, Redis, Kafka, and Docker.
+                    </p>
+                    <div class="hero-cta">
+                        <a href="#projects" class="btn btn-primary" id="btn-view-projects">View Projects</a>
+                        <a href="#contact" class="btn btn-ghost" id="btn-get-in-touch">Get in Touch</a>
+                    </div>
+                    <div class="hero-socials">
+                        <a href="https://github.com/gaganlk" target="_blank" rel="noopener noreferrer"
+                            class="social-pill" id="social-github" aria-label="GitHub">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path
+                                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+                            </svg>
+                            GitHub
+                        </a>
+                        <a href="https://linkedin.com/in/gagan-l-k-b6b27129a" target="_blank" rel="noopener noreferrer"
+                            class="social-pill" id="social-linkedin" aria-label="LinkedIn">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path
+                                    d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                                <rect x="2" y="9" width="4" height="12" />
+                                <circle cx="4" cy="4" r="2" />
+                            </svg>
+                            LinkedIn
+                        </a>
+                        <a href="mailto:gaganlkklr2006@gmail.com" class="social-pill" id="social-email"
+                            aria-label="Email">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                                <polyline points="22,6 12,13 2,6" />
+                            </svg>
+                            Email
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Terminal card -->
+                <div class="hero-terminal scroll-reveal">
+                    <div class="terminal-header">
+                        <span class="t-dot red"></span>
+                        <span class="t-dot yellow"></span>
+                        <span class="t-dot green"></span>
+                        <span class="t-title">gagan@cloud: ~</span>
+                    </div>
+                    <div class="terminal-body">
+                        <div class="t-line"><span class="t-prompt">$</span> cat profile.json</div>
+                        <div class="t-output">
+                            <pre class="t-code">{
+  <span class="k">"name"</span>: <span class="s">"Gagan L K"</span>,
+  <span class="k">"role"</span>: <span class="s">"Cloud &amp; Backend Engineer"</span>,
+  <span class="k">"college"</span>: <span class="s">"DSCE"</span>,
+  <span class="k">"cgpa"</span>: <span class="n">8.05</span>,
+  <span class="k">"stack"</span>: [
+    <span class="s">"FastAPI"</span>, <span class="s">"PostgreSQL"</span>,
+    <span class="s">"Redis"</span>, <span class="s">"Kafka"</span>, <span class="s">"Docker"</span>
+  ]
+}</pre>
+                        </div>
+                        <div class="t-line"><span class="t-prompt">$</span> <span class="t-cursor"></span></div>
+                    </div>
+                </div>
+            </div>
+            <a href="#about" class="scroll-arrow" aria-label="Scroll Down">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="12" y1="5" x2="12" y2="19" />
+                    <polyline points="19 12 12 19 5 12" />
+                </svg>
+            </a>
+        </section>
+
+        <!-- ── ABOUT ──────────────────────────────────────── -->
+        <section class="about" id="about">
+            <div class="section-container">
+                <div class="section-label scroll-reveal">About Me</div>
+                <h2 class="section-title scroll-reveal">Building Cloud-Integrated<br>Backend Systems</h2>
+
+                <div class="about-grid">
+                    <!-- Text -->
+                    <div class="about-text-col scroll-reveal">
+                        <p>
+                            I'm a Computer Science &amp; Engineering student at
+                            <strong>Dayananda Sagar College of Engineering (DSCE)</strong>,
+                            Kolar, Karnataka — graduating in 2027 with a current CGPA of
+                            <strong>8.05</strong>.
+                        </p>
+                        <p>
+                            I have hands-on experience building cloud-integrated backend systems,
+                            real-time infrastructure monitoring tools, and observability platforms.
+                            My focus is on scalable system design, reliable API development, and
+                            solving infrastructure-related challenges using modern cloud-native tools.
+                        </p>
+                        <div class="about-contacts">
+                            <a href="mailto:gaganlkklr2006@gmail.com" class="contact-chip" id="chip-email">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path
+                                        d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                                    <polyline points="22,6 12,13 2,6" />
+                                </svg>
+                                gaganlkklr2006@gmail.com
+                            </a>
+                            <a href="tel:+918431104221" class="contact-chip" id="chip-phone">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path
+                                        d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                                </svg>
+                                +91 8431104221
+                            </a>
+                            <span class="contact-chip">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                                    <circle cx="12" cy="10" r="3" />
+                                </svg>
+                                Kolar, Karnataka
+                            </span>
+                        </div>
+                    </div>
+
+                    <!-- Stats + Profile card -->
+                    <div class="about-card-col scroll-reveal">
+                        <div class="profile-card glass-card">
+                            <!-- PROFILE PHOTO ZONE -->
+                            <div class="profile-photo-wrap">
+                                <!--
+                                    ╔══════════════════════════════════════════╗
+                                    ║  HOW TO ADD YOUR PROFILE PHOTO:          ║
+                                    ║  1. Save your photo as "photo.jpg"       ║
+                                    ║     in the same folder as index.html     ║
+                                    ║  2. Delete the svg below and uncomment:  ║
+                                    ║  <img src="photo.jpg" alt="Gagan L K"   ║
+                                    ║       class="profile-img">               ║
+                                    ╚══════════════════════════════════════════╝
+                                -->
+                                <svg class="avatar-svg" viewBox="0 0 100 100">
+                                    <defs>
+                                        <linearGradient id="ag" x1="0%" y1="0%" x2="100%" y2="100%">
+                                            <stop offset="0%" stop-color="#7c3aed" />
+                                            <stop offset="100%" stop-color="#06b6d4" />
+                                        </linearGradient>
+                                    </defs>
+                                    <circle cx="50" cy="50" r="48" fill="none" stroke="url(#ag)" stroke-width="2" />
+                                    <circle cx="50" cy="38" r="16" fill="url(#ag)" opacity="0.9" />
+                                    <path d="M15 88 C15 70 30 62 50 62 C70 62 85 70 85 88" fill="url(#ag)"
+                                        opacity="0.7" />
+                                </svg>
+                            </div>
+                            <div class="profile-info">
+                                <h3 class="profile-name">Gagan L K</h3>
+                                <p class="profile-role">Cloud &amp; Backend Engineering Student</p>
+                                <div class="profile-badges">
+                                    <span class="pbadge">DSCE</span>
+                                    <span class="pbadge">2023–2027</span>
+                                    <span class="pbadge">CGPA 8.05</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="stat-row">
+                            <div class="stat-box glass-card">
+                                <span class="stat-num">8.05</span>
+                                <span class="stat-lbl">CGPA</span>
+                            </div>
+                            <div class="stat-box glass-card">
+                                <span class="stat-num">2</span>
+                                <span class="stat-lbl">Projects</span>
+                            </div>
+                            <div class="stat-box glass-card">
+                                <span class="stat-num">2</span>
+                                <span class="stat-lbl">Certifications</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ── SKILLS ─────────────────────────────────────── -->
+        <section class="skills" id="skills">
+            <div class="section-container">
+                <div class="section-label scroll-reveal">What I Know</div>
+                <h2 class="section-title scroll-reveal">Technical Skills</h2>
+                <div class="skills-grid">
+
+                    <!-- Card 1 -->
+                    <div class="skill-card glass-card scroll-reveal">
+                        <div class="skill-card-header">
+                            <span class="skill-icon-wrap">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="16 18 22 12 16 6" />
+                                    <polyline points="8 6 2 12 8 18" />
+                                </svg>
+                            </span>
+                            <h3>Languages</h3>
+                        </div>
+                        <ul class="skill-list">
+                            <li><span class="sl-name">Python</span>
+                                <div class="sl-bar">
+                                    <div class="sl-fill" style="width:90%"></div>
+                                </div>
+                            </li>
+                            <li><span class="sl-name">Java</span>
+                                <div class="sl-bar">
+                                    <div class="sl-fill" style="width:80%"></div>
+                                </div>
+                            </li>
+                            <li><span class="sl-name">C &amp; C++</span>
+                                <div class="sl-bar">
+                                    <div class="sl-fill" style="width:75%"></div>
+                                </div>
+                            </li>
+                            <li><span class="sl-name">SQL</span>
+                                <div class="sl-bar">
+                                    <div class="sl-fill" style="width:85%"></div>
+                                </div>
+                            </li>
+                            <li><span class="sl-name">JavaScript</span>
+                                <div class="sl-bar">
+                                    <div class="sl-fill" style="width:70%"></div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="skill-card glass-card scroll-reveal">
+                        <div class="skill-card-header">
+                            <span class="skill-icon-wrap">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z" />
+                                </svg>
+                            </span>
+                            <h3>Cloud &amp; DevOps</h3>
+                        </div>
+                        <ul class="skill-list">
+                            <li><span class="sl-name">Google Cloud Platform</span>
+                                <div class="sl-bar">
+                                    <div class="sl-fill" style="width:80%"></div>
+                                </div>
+                            </li>
+                            <li><span class="sl-name">Docker</span>
+                                <div class="sl-bar">
+                                    <div class="sl-fill" style="width:85%"></div>
+                                </div>
+                            </li>
+                            <li><span class="sl-name">Kubernetes Basics</span>
+                                <div class="sl-bar">
+                                    <div class="sl-fill" style="width:65%"></div>
+                                </div>
+                            </li>
+                            <li><span class="sl-name">Linux / Unix</span>
+                                <div class="sl-bar">
+                                    <div class="sl-fill" style="width:80%"></div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="skill-card glass-card scroll-reveal">
+                        <div class="skill-card-header">
+                            <span class="skill-icon-wrap">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="2" y="2" width="20" height="8" rx="2" />
+                                    <rect x="2" y="14" width="20" height="8" rx="2" />
+                                    <line x1="6" y1="6" x2="6.01" y2="6" />
+                                    <line x1="6" y1="18" x2="6.01" y2="18" />
+                                </svg>
+                            </span>
+                            <h3>Backend &amp; Tools</h3>
+                        </div>
+                        <ul class="skill-list">
+                            <li><span class="sl-name">Git &amp; GitHub</span>
+                                <div class="sl-bar">
+                                    <div class="sl-fill" style="width:90%"></div>
+                                </div>
+                            </li>
+                            <li><span class="sl-name">FastAPI &amp; WebSockets</span>
+                                <div class="sl-bar">
+                                    <div class="sl-fill" style="width:85%"></div>
+                                </div>
+                            </li>
+                            <li><span class="sl-name">PostgreSQL &amp; Redis</span>
+                                <div class="sl-bar">
+                                    <div class="sl-fill" style="width:80%"></div>
+                                </div>
+                            </li>
+                            <li><span class="sl-name">Kafka</span>
+                                <div class="sl-bar">
+                                    <div class="sl-fill" style="width:75%"></div>
+                                </div>
+                            </li>
+                            <li><span class="sl-name">AI / ML Fundamentals</span>
+                                <div class="sl-bar">
+                                    <div class="sl-fill" style="width:70%"></div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ── PROJECTS ───────────────────────────────────── -->
+        <section class="projects" id="projects">
+            <div class="section-container">
+                <div class="section-label scroll-reveal">What I've Built</div>
+                <h2 class="section-title scroll-reveal">Projects</h2>
+
+                <div class="projects-grid" id="projects-grid">
+
+                    <!-- Project 1 -->
+                    <div class="project-card glass-card scroll-reveal" id="project-aiops">
+                        <div class="project-top">
+                            <div class="project-emoji">🌐</div>
+                            <div class="project-meta-tags">
+                                <span class="ptag">Cloud &amp; Backend</span>
+                            </div>
+                        </div>
+                        <h3 class="project-title">Multi-Cloud AIOps Platform</h3>
+                        <p class="project-desc">
+                            Built a cloud-integrated monitoring and observability platform using
+                            FastAPI, PostgreSQL, Redis, Kafka, and WebSockets with real-time
+                            infrastructure monitoring and auto-healing workflow concepts.
+                        </p>
+                        <ul class="project-points">
+                            <li>Scalable backend APIs with FastAPI and WebSocket streams</li>
+                            <li>Real-time infrastructure monitoring with automated alerting</li>
+                            <li>Auto-healing workflow concepts for system reliability</li>
+                        </ul>
+                        <div class="project-stack">
+                            <span class="stack-tag">FastAPI</span>
+                            <span class="stack-tag">PostgreSQL</span>
+                            <span class="stack-tag">Redis</span>
+                            <span class="stack-tag">Kafka</span>
+                            <span class="stack-tag">WebSockets</span>
+                            <span class="stack-tag">Docker</span>
+                            <span class="stack-tag">GCP</span>
+                        </div>
+                        <div class="project-footer">
+                            <!--
+                                ╔══════════════════════════════════════════════════╗
+                                ║  ADD YOUR PROJECT GITHUB LINK HERE:              ║
+                                ║  Replace "https://github.com/gaganlk" below with ║
+                                ║  the actual repo URL for this project.           ║
+                                ╚══════════════════════════════════════════════════╝
+                            -->
+                            <a href="https://github.com/gaganlk/Multi-Cloud-AIOps-Platform" target="_blank"
+                                rel="noopener noreferrer" class="project-link-btn" id="link-aiops-repo">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path
+                                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+                                </svg>
+                                View on GitHub
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="project-card glass-card scroll-reveal" id="project-forensic">
+                        <div class="project-top">
+                            <div class="project-emoji">🔍</div>
+                            <div class="project-meta-tags">
+                                <span class="ptag">Security &amp; Forensics</span>
+                            </div>
+                        </div>
+                        <h3 class="project-title">Digital Forensic Analyzer</h3>
+                        <p class="project-desc">
+                            Developed a forensic analysis system to detect suspicious and
+                            malicious activities within digital files and records using
+                            automated inspection and anomaly detection techniques.
+                        </p>
+                        <ul class="project-points">
+                            <li>Detects suspicious and malicious activities in digital files</li>
+                            <li>File inspection workflows with anomaly analysis techniques</li>
+                            <li>Automated forensic investigation and activity detection pipelines</li>
+                        </ul>
+                        <div class="project-stack">
+                            <span class="stack-tag">Python</span>
+                            <span class="stack-tag">File Analysis</span>
+                            <span class="stack-tag">Anomaly Detection</span>
+                            <span class="stack-tag">Forensic Tools</span>
+                        </div>
+                        <div class="project-footer">
+                            <!--
+                                ╔══════════════════════════════════════════════════╗
+                                ║  ADD YOUR PROJECT GITHUB LINK HERE:              ║
+                                ║  Replace "https://github.com/gaganlk" below with ║
+                                ║  the actual repo URL for this project.           ║
+                                ╚══════════════════════════════════════════════════╝
+                            -->
+                            <a href="https://github.com/gaganlk/digital-forensics-analyzer" target="_blank"
+                                rel="noopener noreferrer" class="project-link-btn" id="link-forensic-repo">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path
+                                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+                                </svg>
+                                View on GitHub
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ── EDUCATION + CERTIFICATIONS ────────────────── -->
+        <section class="education" id="education">
+            <div class="section-container">
+                <div class="section-label scroll-reveal">Background</div>
+                <h2 class="section-title scroll-reveal">Education &amp; Certifications</h2>
+
+                <div class="edu-grid">
+                    <!-- Education -->
+                    <div class="edu-card glass-card scroll-reveal" id="edu-dsce">
+                        <div class="edu-icon-wrap">🎓</div>
+                        <div class="edu-body">
+                            <h3>B.E. Computer Science &amp; Engineering</h3>
+                            <p class="edu-college">Dayananda Sagar College of Engineering (DSCE)</p>
+                            <div class="edu-meta">
+                                <span class="edu-chip">2023 – 2027</span>
+                                <span class="edu-chip highlight">CGPA: 8.05</span>
+                            </div>
+                            <p class="edu-note">Kolar, Karnataka</p>
+                        </div>
+                    </div>
+
+                    <!-- Cert 1 -->
+                    <div class="cert-card glass-card scroll-reveal" id="cert-coursera">
+                        <div class="cert-icon-wrap">📜</div>
+                        <div class="cert-body">
+                            <h4>Python Fundamentals</h4>
+                            <p class="cert-issuer">Coursera</p>
+                        </div>
+                        <!--
+                            ╔══════════════════════════════════════════════════╗
+                            ║  ADD CERTIFICATE LINK HERE:                      ║
+                            ║  Replace href="#" below with the actual URL      ║
+                            ║  of your Coursera certificate (Google Drive,     ║
+                            ║  Coursera share link, or credential URL).        ║
+                            ╚══════════════════════════════════════════════════╝
+                        -->
+                        <a href="https://drive.google.com/file/d/1qwqWXMyTWIBcGvHQ38-AuDkVFd3U-NGW/view?usp=drive_link"
+                            target="_blank" rel="noopener noreferrer" class="cert-view-btn"
+                            id="link-cert-coursera-python" aria-label="View Coursera Certificate">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                                <polyline points="15 3 21 3 21 9" />
+                                <line x1="10" y1="14" x2="21" y2="3" />
+                            </svg>
+                            View
+                        </a>
+                    </div>
+
+                    <!-- Cert 2 -->
+                    <div class="cert-card glass-card scroll-reveal" id="cert-gcp">
+                        <div class="cert-icon-wrap">☁️</div>
+                        <div class="cert-body">
+                            <h4>Google Cloud Career Launchpad Program</h4>
+                            <p class="cert-issuer">Google Cloud</p>
+                        </div>
+                        <!--
+                            ╔══════════════════════════════════════════════════╗
+                            ║  ADD CERTIFICATE LINK HERE:                      ║
+                            ║  Replace href="#" below with your Google Drive   ║
+                            ║  link or the GCP credential/certificate URL.     ║
+                            ╚══════════════════════════════════════════════════╝
+                        -->
+                        <a href="https://drive.google.com/file/d/1OPXRcciN9gxkf7hp-Vn7i65xPiMWq09H/view?usp=drive_link"
+                            target="_blank" rel="noopener noreferrer" class="cert-view-btn"
+                            id="link-cert-google-launchpad" aria-label="View Google Cloud Certificate">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                                <polyline points="15 3 21 3 21 9" />
+                                <line x1="10" y1="14" x2="21" y2="3" />
+                            </svg>
+                            View
+                        </a>
+                    </div>
+
+                    <!-- Cert 3: JP Morgan -->
+                    <div class="cert-card glass-card scroll-reveal" id="cert-jpmorgan">
+                        <div class="cert-icon-wrap">🏦</div>
+                        <div class="cert-body">
+                            <h4>Software Engineering Job Simulation</h4>
+                            <p class="cert-issuer">J.P. Morgan · Forage · Oct 2025</p>
+                        </div>
+                        <!--
+                            ADD LINK: Replace href="#" with your Forage credential URL
+                            Credential ID: yfEBkyB8paSjc4TGL
+                        -->
+                        <a href="https://drive.google.com/file/d/1U4znwnDgIFPYgaB0LLqLhQHSps8Usrxb/view?usp=drive_link"
+                            target="_blank" rel="noopener noreferrer" class="cert-view-btn" id="link-cert-jpmorgan"
+                            aria-label="View J.P. Morgan Certificate">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                                <polyline points="15 3 21 3 21 9" />
+                                <line x1="10" y1="14" x2="21" y2="3" />
+                            </svg>
+                            View
+                        </a>
+                    </div>
+
+                    <!-- Cert 4: AWS -->
+                    <div class="cert-card glass-card scroll-reveal" id="cert-aws">
+                        <div class="cert-icon-wrap">☁️</div>
+                        <div class="cert-body">
+                            <h4>Solutions Architecture Job Simulation</h4>
+                            <p class="cert-issuer">AWS · Forage · Oct 2025</p>
+                        </div>
+                        <!--
+                            ADD LINK: Replace href="#" with your Forage credential URL
+                            Credential ID: GRdhauiPacFqJCJA2
+                        -->
+                        <a href="https://drive.google.com/file/d/1Cpn-Er6uvmslVUSlocQ_bgWNPHjT2-mQ/view?usp=drive_link"
+                            target="_blank" rel="noopener noreferrer" class="cert-view-btn" id="link-cert-aws"
+                            aria-label="View AWS Certificate">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                                <polyline points="15 3 21 3 21 9" />
+                                <line x1="10" y1="14" x2="21" y2="3" />
+                            </svg>
+                            View
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ── DEVELOPER CONSOLE ────────────────────────────────────── -->
+        <section class="dev-console" id="terminal">
+            <div class="section-container">
+                <div class="section-label scroll-reveal">Interactive</div>
+                <h2 class="section-title scroll-reveal">Developer Console</h2>
+                <p class="console-intro scroll-reveal">
+                    An interactive CLI to explore my profile. Type <code>help</code> to see all commands,
+                    or click the quick-action buttons above the terminal.
+                </p>
+
+                <div class="term-window scroll-reveal">
+                    <!-- Window chrome -->
+                    <div class="term-win-header">
+                        <div class="term-win-dots">
+                            <span class="td r"></span>
+                            <span class="td y"></span>
+                            <span class="td g"></span>
+                        </div>
+                        <span class="term-win-title">gagan@portfolio:~ — bash</span>
+                        <div class="term-win-actions">
+                            <button class="term-action-btn gold" id="btn-cmd-help">? help</button>
+                            <button class="term-action-btn" id="btn-cmd-whoami">whoami</button>
+                            <button class="term-action-btn" id="btn-cmd-skills">skills</button>
+                            <button class="term-action-btn" id="btn-cmd-projects">projects</button>
+                            <button class="term-action-btn" id="btn-cmd-certs">certs</button>
+                            <button class="term-action-btn" id="btn-cmd-clear">clear</button>
+                        </div>
+                    </div>
+
+                    <!-- Output area -->
+                    <div class="term-output" id="term-output" role="log" aria-live="polite">
+                        <div class="term-welcome">
+                            <span class="term-welcome-line big">
+                                ■ Gagan L K — <span class="tw-hl">Developer Console</span> v2.0
+                            </span>
+                            <span class="term-welcome-line">Cloud &amp; Backend Engineering Portfolio</span>
+                            <span class="term-welcome-line">&nbsp;</span>
+                            <span class="term-welcome-line">Type <span class="tw-cmd">help</span> or click a button above to get started.</span>
+                        </div>
+                    </div>
+
+                    <!-- Input row -->
+                    <div class="term-input-row">
+                        <span class="term-prompt-sym" aria-hidden="true">$</span>
+                        <input
+                            type="text"
+                            id="term-input"
+                            class="term-input"
+                            placeholder="Type a command and press Enter..."
+                            autocomplete="off"
+                            spellcheck="false"
+                            aria-label="Terminal command input"
+                        >
+                        <button class="term-run-btn" id="term-run-btn" aria-label="Run command">↵</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ── CONTACT ────────────────────────────────────── -->
+        <section class="contact" id="contact">
+            <div class="section-container">
+                <div class="section-label scroll-reveal">Say Hello</div>
+                <h2 class="section-title scroll-reveal">Get In Touch</h2>
+                <p class="contact-sub scroll-reveal">
+                    I'm open to internship opportunities, collaborations, and conversations
+                    about cloud and backend engineering.
+                </p>
+
+                <div class="contact-grid">
+                    <!-- Form -->
+                    <div class="contact-form-wrap glass-card scroll-reveal">
+                        <h3>Send a Message</h3>
+                        <form id="contact-form" class="contact-form" novalidate>
+                            <!-- Hidden Formspree fields -->
+                            <input type="hidden" name="_subject" value="Portfolio Contact from Gagan's Site">
+                            <input type="hidden" name="_replyto" id="hidden-reply">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="name">Name</label>
+                                    <input type="text" id="name" name="name" placeholder="Your name" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email</label>
+                                    <input type="email" id="email" name="email" placeholder="your@email.com" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <input type="text" id="subject" name="subject" placeholder="e.g. Internship inquiry"
+                                    required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="5"
+                                    placeholder="Tell me about your opportunity or project..." required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-full" id="btn-submit-form">
+                                Send Message
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <line x1="22" y1="2" x2="11" y2="13" />
+                                    <polygon points="22 2 15 22 11 13 2 9 22 2" />
+                                </svg>
+                            </button>
+                        </form>
+                    </div>
+
+                    <!-- Direct info -->
+                    <div class="contact-info-col scroll-reveal">
+                        <div class="contact-info-card glass-card">
+                            <div class="ci-icon email-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path
+                                        d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                                    <polyline points="22,6 12,13 2,6" />
+                                </svg>
+                            </div>
+                            <div>
+                                <h4>Email</h4>
+                                <a href="mailto:gaganlkklr2006@gmail.com">gaganlkklr2006@gmail.com</a>
+                                <p>Replies within 24 hours</p>
+                            </div>
+                        </div>
+                        <div class="contact-info-card glass-card">
+                            <div class="ci-icon phone-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path
+                                        d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                                </svg>
+                            </div>
+                            <div>
+                                <h4>Phone</h4>
+                                <a href="tel:+918431104221">+91 8431104221</a>
+                                <p>Mon–Fri, 9am–6pm IST</p>
+                            </div>
+                        </div>
+                        <div class="contact-info-card glass-card">
+                            <div class="ci-icon location-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                                    <circle cx="12" cy="10" r="3" />
+                                </svg>
+                            </div>
+                            <div>
+                                <h4>Location</h4>
+                                <p>Kolar, Karnataka, India</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ── FOOTER ─────────────────────────────────────────── -->
+    <footer class="main-footer">
+        <div class="footer-inner">
+            <a href="#home" class="logo">
+                <span class="logo-bracket">&lt;</span>
+                <span class="logo-text">GLK</span>
+                <span class="logo-bracket">/&gt;</span>
+            </a>
+            <p class="footer-copy">&copy; 2026 Gagan L K. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="https://github.com/gaganlk" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="https://linkedin.com/in/gagan-l-k-b6b27129a" target="_blank"
+                    rel="noopener noreferrer">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast container -->
+    <div class="toast-container" id="toast-container"></div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
