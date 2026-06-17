@@ -112,55 +112,83 @@
                     </div>
                 </div>
 
-                <!-- Hero Identity Card -->
-                <div class="hero-identity-card glass-card scroll-reveal">
-                    <div class="hic-top">
-                        <div class="hic-avatar">
-                            <svg viewBox="0 0 100 100" class="hic-avatar-svg">
+                <!-- Hero System Dashboard -->
+                <div class="hero-system-dashboard glass-card scroll-reveal">
+                    <div class="hsd-header">
+                        <div class="hsd-dots">
+                            <span class="hsd-dot red"></span>
+                            <span class="hsd-dot yellow"></span>
+                            <span class="hsd-dot green"></span>
+                        </div>
+                        <span class="hsd-title">GCP-RUN // SERVICES_MONITOR</span>
+                        <div class="hsd-live"><span class="hsd-live-dot"></span>LIVE</div>
+                    </div>
+                    
+                    <div class="hsd-body">
+                        <!-- Service 1: API Gateway -->
+                        <div class="hsd-service-row">
+                            <div class="hsd-service-info">
+                                <span class="hsd-service-name">api-gateway-service</span>
+                                <span class="hsd-status-pill green">Active</span>
+                            </div>
+                            <div class="hsd-metrics">
+                                <span class="hsd-metric-val">24ms <span class="hsd-metric-lbl">latency</span></span>
+                                <span class="hsd-metric-val">200 <span class="hsd-metric-lbl">ok</span></span>
+                            </div>
+                        </div>
+
+                        <!-- Service 2: Message Stream -->
+                        <div class="hsd-service-row">
+                            <div class="hsd-service-info">
+                                <span class="hsd-service-name">kafka-event-stream</span>
+                                <span class="hsd-status-pill green">Streaming</span>
+                            </div>
+                            <div class="hsd-metrics">
+                                <span class="hsd-metric-val">user.events <span class="hsd-metric-lbl">topic</span></span>
+                                <span class="hsd-metric-val">342/s <span class="hsd-metric-lbl">msg</span></span>
+                            </div>
+                        </div>
+
+                        <!-- Service 3: Caching & DB -->
+                        <div class="hsd-service-row">
+                            <div class="hsd-service-info">
+                                <span class="hsd-service-name">redis-cache</span>
+                                <span class="hsd-status-pill green">98.2% hit</span>
+                            </div>
+                            <div class="hsd-metrics">
+                                <span class="hsd-metric-val">12.4 MB <span class="hsd-metric-lbl">mem</span></span>
+                                <span class="hsd-metric-val">postgres <span class="hsd-metric-lbl">sync</span></span>
+                            </div>
+                        </div>
+
+                        <!-- Live Graph visual -->
+                        <div class="hsd-graph-container">
+                            <div class="hsd-graph-label">Backend Throughput (Request Flow)</div>
+                            <svg class="hsd-sparkline" viewBox="0 0 400 100">
                                 <defs>
-                                    <linearGradient id="hicGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-                                        <stop offset="0%" stop-color="#0d9488" />
-                                        <stop offset="100%" stop-color="#ca8a04" />
+                                    <linearGradient id="sparklineGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+                                        <stop offset="0%" stop-color="rgba(13, 148, 136, 0.4)" />
+                                        <stop offset="100%" stop-color="rgba(13, 148, 136, 0.0)" />
                                     </linearGradient>
                                 </defs>
-                                <circle cx="50" cy="50" r="48" fill="none" stroke="url(#hicGrad)" stroke-width="2.5" />
-                                <circle cx="50" cy="38" r="16" fill="url(#hicGrad)" opacity="0.9" />
-                                <path d="M15 88 C15 70 30 62 50 62 C70 62 85 70 85 88" fill="url(#hicGrad)" opacity="0.75" />
+                                <path class="hsd-sparkline-area" d="M0,80 Q40,40 80,70 T160,30 T240,60 T320,20 T400,50 L400,100 L0,100 Z" fill="url(#sparklineGrad)" />
+                                <path class="hsd-sparkline-line" d="M0,80 Q40,40 80,70 T160,30 T240,60 T320,20 T400,50" fill="none" stroke="var(--accent)" stroke-width="2.5" />
+                                <circle cx="400" cy="50" r="4" fill="var(--accent)" />
+                                <circle cx="400" cy="50" r="8" fill="none" stroke="var(--accent)" stroke-width="1.5" class="hsd-pulse-ring" />
                             </svg>
                         </div>
-                        <div class="hic-identity">
-                            <h3 class="hic-name">Gagan L K</h3>
-                            <p class="hic-role">Cloud &amp; Backend Engineer</p>
-                            <span class="hic-status"><span class="hic-dot"></span>Open to Opportunities</span>
+
+                        <!-- Docker & Cloud Run container status -->
+                        <div class="hsd-footer">
+                            <div class="hsd-container-stat">
+                                <span class="hcs-dot active"></span>
+                                <span>docker_engine: running</span>
+                            </div>
+                            <div class="hsd-container-stat">
+                                <span class="hcs-dot active"></span>
+                                <span>gcp_cluster: healthy</span>
+                            </div>
                         </div>
-                    </div>
-                    <div class="hic-divider"></div>
-                    <div class="hic-stats">
-                        <div class="hic-stat">
-                            <span class="hic-stat-val">8.05</span>
-                            <span class="hic-stat-key">CGPA</span>
-                        </div>
-                        <div class="hic-stat-sep"></div>
-                        <div class="hic-stat">
-                            <span class="hic-stat-val">4</span>
-                            <span class="hic-stat-key">Certs</span>
-                        </div>
-                        <div class="hic-stat-sep"></div>
-                        <div class="hic-stat">
-                            <span class="hic-stat-val">2</span>
-                            <span class="hic-stat-key">Projects</span>
-                        </div>
-                    </div>
-                    <div class="hic-divider"></div>
-                    <div class="hic-stack-label">Tech Stack</div>
-                    <div class="hic-stack">
-                        <span class="hic-tag">Python</span>
-                        <span class="hic-tag">FastAPI</span>
-                        <span class="hic-tag">PostgreSQL</span>
-                        <span class="hic-tag">Redis</span>
-                        <span class="hic-tag">Kafka</span>
-                        <span class="hic-tag">Docker</span>
-                        <span class="hic-tag">GCP</span>
                     </div>
                 </div>
             </div>
