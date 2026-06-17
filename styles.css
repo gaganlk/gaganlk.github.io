@@ -422,8 +422,9 @@ ul {
     position: absolute;
     inset: 0;
     background-image:
-        radial-gradient(circle at 20% 30%, rgba(13, 148, 136, 0.14) 0%, transparent 50%),
-        radial-gradient(circle at 80% 70%, rgba(202, 138, 4, 0.08) 0%, transparent 50%);
+        radial-gradient(circle at 15% 40%, rgba(13, 148, 136, 0.16) 0%, transparent 55%),
+        radial-gradient(circle at 85% 20%, rgba(202, 138, 4, 0.10) 0%, transparent 50%),
+        radial-gradient(circle at 50% 80%, rgba(13, 148, 136, 0.08) 0%, transparent 40%);
     pointer-events: none;
 }
 
@@ -431,9 +432,9 @@ ul {
     content: '';
     position: absolute;
     inset: 0;
-    background-image: radial-gradient(rgba(13, 148, 136, 0.18) 1px, transparent 1px);
+    background-image: radial-gradient(rgba(13, 148, 136, 0.16) 1px, transparent 1px);
     background-size: 40px 40px;
-    mask-image: radial-gradient(ellipse 80% 80% at 50% 50%, black 0%, transparent 100%);
+    mask-image: radial-gradient(ellipse 90% 80% at 50% 50%, black 0%, transparent 100%);
 }
 
 .hero-container {
@@ -444,6 +445,30 @@ ul {
     grid-template-columns: 1fr 480px;
     align-items: center;
     gap: 60px;
+}
+
+/* Solo hero — no right-side card */
+.hero-container-solo {
+    grid-template-columns: 1fr;
+    max-width: 860px;
+    text-align: left;
+}
+
+.hero-container-solo .hero-title {
+    font-size: clamp(3rem, 6.5vw, 5rem);
+}
+
+.hero-container-solo .hero-desc {
+    max-width: 680px;
+    font-size: 1.12rem;
+}
+
+.hero-container-solo .hero-cta {
+    flex-wrap: wrap;
+}
+
+.hero-container-solo .hero-socials {
+    flex-wrap: wrap;
 }
 
 /* Badge */

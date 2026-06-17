@@ -62,7 +62,7 @@
         <!-- ── HERO ───────────────────────────────────────── -->
         <section class="hero" id="home">
             <div class="hero-bg-grid"></div>
-            <div class="hero-container">
+            <div class="hero-container hero-container-solo">
                 <div class="hero-content scroll-reveal">
                     <div class="hero-badge">
                         <span class="badge-dot"></span>
@@ -112,85 +112,6 @@
                     </div>
                 </div>
 
-                <!-- Hero System Dashboard -->
-                <div class="hero-system-dashboard glass-card scroll-reveal">
-                    <div class="hsd-header">
-                        <div class="hsd-dots">
-                            <span class="hsd-dot red"></span>
-                            <span class="hsd-dot yellow"></span>
-                            <span class="hsd-dot green"></span>
-                        </div>
-                        <span class="hsd-title">GCP-RUN // SERVICES_MONITOR</span>
-                        <div class="hsd-live"><span class="hsd-live-dot"></span>LIVE</div>
-                    </div>
-                    
-                    <div class="hsd-body">
-                        <!-- Service 1: API Gateway -->
-                        <div class="hsd-service-row">
-                            <div class="hsd-service-info">
-                                <span class="hsd-service-name">api-gateway-service</span>
-                                <span class="hsd-status-pill green">Active</span>
-                            </div>
-                            <div class="hsd-metrics">
-                                <span class="hsd-metric-val">24ms <span class="hsd-metric-lbl">latency</span></span>
-                                <span class="hsd-metric-val">200 <span class="hsd-metric-lbl">ok</span></span>
-                            </div>
-                        </div>
-
-                        <!-- Service 2: Message Stream -->
-                        <div class="hsd-service-row">
-                            <div class="hsd-service-info">
-                                <span class="hsd-service-name">kafka-event-stream</span>
-                                <span class="hsd-status-pill green">Streaming</span>
-                            </div>
-                            <div class="hsd-metrics">
-                                <span class="hsd-metric-val">user.events <span class="hsd-metric-lbl">topic</span></span>
-                                <span class="hsd-metric-val">342/s <span class="hsd-metric-lbl">msg</span></span>
-                            </div>
-                        </div>
-
-                        <!-- Service 3: Caching & DB -->
-                        <div class="hsd-service-row">
-                            <div class="hsd-service-info">
-                                <span class="hsd-service-name">redis-cache</span>
-                                <span class="hsd-status-pill green">98.2% hit</span>
-                            </div>
-                            <div class="hsd-metrics">
-                                <span class="hsd-metric-val">12.4 MB <span class="hsd-metric-lbl">mem</span></span>
-                                <span class="hsd-metric-val">postgres <span class="hsd-metric-lbl">sync</span></span>
-                            </div>
-                        </div>
-
-                        <!-- Live Graph visual -->
-                        <div class="hsd-graph-container">
-                            <div class="hsd-graph-label">Backend Throughput (Request Flow)</div>
-                            <svg class="hsd-sparkline" viewBox="0 0 400 100">
-                                <defs>
-                                    <linearGradient id="sparklineGrad" x1="0%" y1="0%" x2="0%" y2="100%">
-                                        <stop offset="0%" stop-color="rgba(13, 148, 136, 0.4)" />
-                                        <stop offset="100%" stop-color="rgba(13, 148, 136, 0.0)" />
-                                    </linearGradient>
-                                </defs>
-                                <path class="hsd-sparkline-area" d="M0,80 Q40,40 80,70 T160,30 T240,60 T320,20 T400,50 L400,100 L0,100 Z" fill="url(#sparklineGrad)" />
-                                <path class="hsd-sparkline-line" d="M0,80 Q40,40 80,70 T160,30 T240,60 T320,20 T400,50" fill="none" stroke="var(--accent)" stroke-width="2.5" />
-                                <circle cx="400" cy="50" r="4" fill="var(--accent)" />
-                                <circle cx="400" cy="50" r="8" fill="none" stroke="var(--accent)" stroke-width="1.5" class="hsd-pulse-ring" />
-                            </svg>
-                        </div>
-
-                        <!-- Docker & Cloud Run container status -->
-                        <div class="hsd-footer">
-                            <div class="hsd-container-stat">
-                                <span class="hcs-dot active"></span>
-                                <span>docker_engine: running</span>
-                            </div>
-                            <div class="hsd-container-stat">
-                                <span class="hcs-dot active"></span>
-                                <span>gcp_cluster: healthy</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
             <a href="#about" class="scroll-arrow" aria-label="Scroll Down">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
