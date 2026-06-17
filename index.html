@@ -30,7 +30,7 @@
                 <a href="#skills" class="nav-link" id="link-skills">Skills</a>
                 <a href="#projects" class="nav-link" id="link-projects">Projects</a>
                 <a href="#education" class="nav-link" id="link-education">Education</a>
-
+                <a href="#terminal" class="nav-link" id="link-terminal">Console</a>
                 <a href="#contact" class="nav-link btn-contact" id="link-contact">Contact</a>
             </nav>
             <div class="nav-actions">
@@ -112,29 +112,55 @@
                     </div>
                 </div>
 
-                <!-- Terminal card -->
-                <div class="hero-terminal scroll-reveal">
-                    <div class="terminal-header">
-                        <span class="t-dot red"></span>
-                        <span class="t-dot yellow"></span>
-                        <span class="t-dot green"></span>
-                        <span class="t-title">gagan@cloud: ~</span>
-                    </div>
-                    <div class="terminal-body">
-                        <div class="t-line"><span class="t-prompt">$</span> cat profile.json</div>
-                        <div class="t-output">
-                            <pre class="t-code">{
-  <span class="k">"name"</span>: <span class="s">"Gagan L K"</span>,
-  <span class="k">"role"</span>: <span class="s">"Cloud &amp; Backend Engineer"</span>,
-  <span class="k">"college"</span>: <span class="s">"DSCE"</span>,
-  <span class="k">"cgpa"</span>: <span class="n">8.05</span>,
-  <span class="k">"stack"</span>: [
-    <span class="s">"FastAPI"</span>, <span class="s">"PostgreSQL"</span>,
-    <span class="s">"Redis"</span>, <span class="s">"Kafka"</span>, <span class="s">"Docker"</span>
-  ]
-}</pre>
+                <!-- Hero Identity Card -->
+                <div class="hero-identity-card glass-card scroll-reveal">
+                    <div class="hic-top">
+                        <div class="hic-avatar">
+                            <svg viewBox="0 0 100 100" class="hic-avatar-svg">
+                                <defs>
+                                    <linearGradient id="hicGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" stop-color="#0d9488" />
+                                        <stop offset="100%" stop-color="#ca8a04" />
+                                    </linearGradient>
+                                </defs>
+                                <circle cx="50" cy="50" r="48" fill="none" stroke="url(#hicGrad)" stroke-width="2.5" />
+                                <circle cx="50" cy="38" r="16" fill="url(#hicGrad)" opacity="0.9" />
+                                <path d="M15 88 C15 70 30 62 50 62 C70 62 85 70 85 88" fill="url(#hicGrad)" opacity="0.75" />
+                            </svg>
                         </div>
-                        <div class="t-line"><span class="t-prompt">$</span> <span class="t-cursor"></span></div>
+                        <div class="hic-identity">
+                            <h3 class="hic-name">Gagan L K</h3>
+                            <p class="hic-role">Cloud &amp; Backend Engineer</p>
+                            <span class="hic-status"><span class="hic-dot"></span>Open to Opportunities</span>
+                        </div>
+                    </div>
+                    <div class="hic-divider"></div>
+                    <div class="hic-stats">
+                        <div class="hic-stat">
+                            <span class="hic-stat-val">8.05</span>
+                            <span class="hic-stat-key">CGPA</span>
+                        </div>
+                        <div class="hic-stat-sep"></div>
+                        <div class="hic-stat">
+                            <span class="hic-stat-val">4</span>
+                            <span class="hic-stat-key">Certs</span>
+                        </div>
+                        <div class="hic-stat-sep"></div>
+                        <div class="hic-stat">
+                            <span class="hic-stat-val">2</span>
+                            <span class="hic-stat-key">Projects</span>
+                        </div>
+                    </div>
+                    <div class="hic-divider"></div>
+                    <div class="hic-stack-label">Tech Stack</div>
+                    <div class="hic-stack">
+                        <span class="hic-tag">Python</span>
+                        <span class="hic-tag">FastAPI</span>
+                        <span class="hic-tag">PostgreSQL</span>
+                        <span class="hic-tag">Redis</span>
+                        <span class="hic-tag">Kafka</span>
+                        <span class="hic-tag">Docker</span>
+                        <span class="hic-tag">GCP</span>
                     </div>
                 </div>
             </div>
@@ -605,6 +631,58 @@
             </div>
         </section>
 
+        <!-- ── DEVELOPER CONSOLE ────────────────────────────────────── -->
+        <section class="dev-console" id="terminal">
+            <div class="section-container">
+                <div class="section-label scroll-reveal">Interactive</div>
+                <h2 class="section-title scroll-reveal">Developer Console</h2>
+                <p class="console-intro scroll-reveal">
+                    An interactive CLI to explore my profile. Type <code>help</code> to see all commands,
+                    or click the quick-action buttons above the terminal.
+                </p>
+
+                <div class="term-window scroll-reveal">
+                    <!-- Window chrome -->
+                    <div class="term-win-header">
+                        <div class="term-win-dots">
+                            <span class="td r"></span>
+                            <span class="td y"></span>
+                            <span class="td g"></span>
+                        </div>
+                        <span class="term-win-title">gagan@portfolio:~ — bash</span>
+                        <div class="term-win-actions">
+                            <button class="term-action-btn gold" id="btn-cmd-help">? help</button>
+                            <button class="term-action-btn" id="btn-cmd-whoami">whoami</button>
+                            <button class="term-action-btn" id="btn-cmd-skills">skills</button>
+                            <button class="term-action-btn" id="btn-cmd-projects">projects</button>
+                            <button class="term-action-btn" id="btn-cmd-certs">certs</button>
+                            <button class="term-action-btn" id="btn-cmd-clear">clear</button>
+                        </div>
+                    </div>
+
+                    <!-- Output area -->
+                    <div class="term-output" id="term-output" role="log" aria-live="polite">
+                        <div class="term-welcome">
+                            <span class="term-welcome-line big">
+                                &#9632; Gagan L K &mdash; <span class="tw-hl">Developer Console</span> v2.0
+                            </span>
+                            <span class="term-welcome-line">Cloud &amp; Backend Engineering Portfolio</span>
+                            <span class="term-welcome-line">&nbsp;</span>
+                            <span class="term-welcome-line">Type <span class="tw-cmd">help</span> or click a button above to get started.</span>
+                        </div>
+                    </div>
+
+                    <!-- Input row -->
+                    <div class="term-input-row">
+                        <span class="term-prompt-sym" aria-hidden="true">$</span>
+                        <input type="text" id="term-input" class="term-input"
+                            placeholder="Type a command and press Enter..." autocomplete="off" spellcheck="false"
+                            aria-label="Terminal command input">
+                        <button class="term-run-btn" id="term-run-btn" aria-label="Run command">&#8629;</button>
+                    </div>
+                </div>
+            </div>
+        </section>
 
 
         <!-- ── CONTACT ────────────────────────────────────── -->
